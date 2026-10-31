@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 24" width="800" height="24" role="img" aria-label="divider">
+<style>
+  .pulse{animation:run 3.2s cubic-bezier(.6,0,.4,1) infinite}
+  @keyframes run{from{transform:translateX(-260px)}to{transform:translateX(860px)}}
+  .tick{animation:tick 1.6s steps(1) infinite}
+  @keyframes tick{50%{opacity:.25}}
+  @media (prefers-reduced-motion:reduce){.pulse{animation:none}}
+</style>
+<defs>
+  <linearGradient id="seg" x1="0" x2="1"><stop offset="0" stop-color="#00ff41" stop-opacity="0"/><stop offset=".85" stop-color="#7dffa0"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="base" x1="0" x2="1"><stop offset="0" stop-color="#00ff41" stop-opacity="0"/><stop offset=".5" stop-color="#00ff41" stop-opacity=".45"/><stop offset="1" stop-color="#00ff41" stop-opacity="0"/></linearGradient>
+  <filter id="glow" x="-10%" y="-200%" width="120%" height="500%"><feGaussianBlur stdDeviation="2"/></filter>
+</defs>
+<rect x="0" y="11.5" width="800" height="1" fill="url(#base)"/>
+<g class="pulse">
+  <rect x="0" y="10" width="220" height="4" fill="url(#seg)" filter="url(#glow)"/>
+  <rect x="0" y="11.5" width="220" height="1" fill="url(#seg)"/>
+</g>
+<g fill="#00ff41">
+  <rect class="tick" x="396" y="8" width="8" height="8" transform="rotate(45 400 12)"/>
+  <rect x="370" y="11" width="14" height="2" opacity=".6"/>
+  <rect x="416" y="11" width="14" height="2" opacity=".6"/>
+</g>
+</svg>
