@@ -128,7 +128,10 @@ High-performance restaurant POS with ESC/POS thermal printing, live order lifecy
 ![](https://img.shields.io/badge/Cloudflare_D1-161B22?style=flat-square&logo=cloudflare&logoColor=00FF41&color=003B10)
 ![](https://img.shields.io/badge/ESC%2FPOS-161B22?style=flat-square&color=003B10)
 
+![In Production](https://img.shields.io/badge/In_Production-161B22?style=for-the-badge&logo=statuspage&logoColor=00FF41)
 ![Private Repo](https://img.shields.io/badge/Private_Repo-161B22?style=for-the-badge&logo=github&logoColor=8B949E)
+
+<sub>🔒 Live with real users, so the repo and app links are kept private.</sub>
 
 
 </td>
