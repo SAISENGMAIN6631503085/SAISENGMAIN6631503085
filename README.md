@@ -111,7 +111,9 @@ University advising & student support platform streamlining advisory workflows, 
 ![](https://img.shields.io/badge/AUN--QA-161B22?style=flat-square&color=003B10)
 
 [![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/advisinglog/advising-log)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-161B22?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://se-advising-log.vercel.app)
+[![Preview Demo](https://img.shields.io/badge/Preview_Demo-161B22?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://se-advising-log.vercel.app)
+
+<sub>⚠️ Preview only: an early scaffold of the project. The production app is private and can't be shared publicly.</sub>
 
 
 </td>
