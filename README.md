@@ -39,8 +39,9 @@ const sai = {
 
 | | |
 |:--|:--|
-| **Languages & Core** | [![Languages](https://skillicons.dev/icons?i=ts,js,py,postgres,html,css&theme=dark)](#) |
-| **Frameworks, Cloud & Deployment** | [![Frameworks & Cloud](https://skillicons.dev/icons?i=nextjs,vercel,docker,git&theme=dark)](#) |
+| **Languages & Core** | [![Languages](https://skillicons.dev/icons?i=ts,js,py,go,postgres,html,css&theme=dark)](#) |
+| **Frameworks, Cloud & Deployment** | [![Frameworks & Cloud](https://skillicons.dev/icons?i=nextjs,react,fastapi,vercel,docker,git&theme=dark)](#) |
+| **Data & Observability** | ![ClickHouse](https://img.shields.io/badge/ClickHouse-161B22?style=for-the-badge&logo=clickhouse&logoColor=00FF41) |
 
 **AI Tools & Advanced Environments**
 
@@ -62,7 +63,7 @@ const sai = {
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### 📸 AI Campus Event Photo Finder
 <sub>`SENIOR PROJECT` · `2025 – PRESENT`</sub>
@@ -73,8 +74,32 @@ AI-powered campus photo discovery using facial recognition and high-dimensional 
 ![](https://img.shields.io/badge/Vector_Search-161B22?style=flat-square&color=003B10)
 ![](https://img.shields.io/badge/PDPA-161B22?style=flat-square&color=003B10)
 
+[![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/kwanphotofinder/photofinder)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-161B22?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://photofinder-five.vercel.app)
+
+
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
+
+### 🛡️ Mini Log Management System
+<sub>`SIEM-LITE` · `2026`</sub>
+
+Multi-tenant log management / SIEM-lite that ingests firewall, syslog, app, AWS CloudTrail, Microsoft 365, Active Directory and CrowdStrike logs, normalizes them into one schema, and offers search, dashboards and brute-force / port-scan / malware alerts with strict tenant isolation.
+
+![](https://img.shields.io/badge/Go-161B22?style=flat-square&logo=go&logoColor=00FF41&color=003B10)
+![](https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=00FF41&color=003B10)
+![](https://img.shields.io/badge/ClickHouse-161B22?style=flat-square&logo=clickhouse&logoColor=00FF41&color=003B10)
+![](https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=00FF41&color=003B10)
+![](https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=00FF41&color=003B10)
+![](https://img.shields.io/badge/Docker-161B22?style=flat-square&logo=docker&logoColor=00FF41&color=003B10)
+
+[![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/SAISENGMAIN6631503085/log-mgmt)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-161B22?style=for-the-badge&logo=caddy&logoColor=00FF41)](https://14.207.143.101.sslip.io)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### 🎓 AdvisingLog
 <sub>`2025 – PRESENT`</sub>
@@ -85,8 +110,12 @@ University advising & student support platform streamlining advisory workflows, 
 ![](https://img.shields.io/badge/Bilingual-161B22?style=flat-square&color=003B10)
 ![](https://img.shields.io/badge/AUN--QA-161B22?style=flat-square&color=003B10)
 
+[![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/advisinglog/advising-log)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-161B22?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://se-advising-log.vercel.app)
+
+
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### 🍳 Chef's Companion
 <sub>`2025 – PRESENT`</sub>
@@ -96,6 +125,9 @@ High-performance restaurant POS with ESC/POS thermal printing, live order lifecy
 ![](https://img.shields.io/badge/TanStack_Start-161B22?style=flat-square&color=003B10)
 ![](https://img.shields.io/badge/Cloudflare_D1-161B22?style=flat-square&logo=cloudflare&logoColor=00FF41&color=003B10)
 ![](https://img.shields.io/badge/ESC%2FPOS-161B22?style=flat-square&color=003B10)
+
+![Private Repo](https://img.shields.io/badge/Private_Repo-161B22?style=for-the-badge&logo=github&logoColor=8B949E)
+
 
 </td>
 </tr>
