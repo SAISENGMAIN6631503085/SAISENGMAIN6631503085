@@ -70,9 +70,9 @@ const sai = {
 
 AI-powered campus photo discovery using facial recognition and high-dimensional vector search — automated photo matching, real-time uploads, role-based workflows, and a privacy-first design with face blurring and PDPA-compliant consent flows.
 
-![](https://img.shields.io/badge/Face_Recognition-161B22?style=flat-square&color=003B10)
-![](https://img.shields.io/badge/Vector_Search-161B22?style=flat-square&color=003B10)
-![](https://img.shields.io/badge/PDPA-161B22?style=flat-square&color=003B10)
+![Face Recognition](https://img.shields.io/badge/Face_Recognition-?style=flat-square&color=003B10)
+![Vector Search](https://img.shields.io/badge/Vector_Search-?style=flat-square&color=003B10)
+![PDPA](https://img.shields.io/badge/PDPA-?style=flat-square&color=003B10)
 
 [![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/kwanphotofinder/photofinder)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-161B22?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://photofinder-five.vercel.app)
@@ -86,12 +86,12 @@ AI-powered campus photo discovery using facial recognition and high-dimensional 
 
 Multi-tenant log management / SIEM-lite that ingests firewall, syslog, app, AWS CloudTrail, Microsoft 365, Active Directory and CrowdStrike logs, normalizes them into one schema, and offers search, dashboards and brute-force / port-scan / malware alerts with strict tenant isolation.
 
-![](https://img.shields.io/badge/Go-161B22?style=flat-square&logo=go&logoColor=00FF41&color=003B10)
-![](https://img.shields.io/badge/FastAPI-161B22?style=flat-square&logo=fastapi&logoColor=00FF41&color=003B10)
-![](https://img.shields.io/badge/ClickHouse-161B22?style=flat-square&logo=clickhouse&logoColor=00FF41&color=003B10)
-![](https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=00FF41&color=003B10)
-![](https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=00FF41&color=003B10)
-![](https://img.shields.io/badge/Docker-161B22?style=flat-square&logo=docker&logoColor=00FF41&color=003B10)
+![Go](https://img.shields.io/badge/Go-?style=flat-square&logo=go&logoColor=00FF41&color=003B10)
+![FastAPI](https://img.shields.io/badge/FastAPI-?style=flat-square&logo=fastapi&logoColor=00FF41&color=003B10)
+![ClickHouse](https://img.shields.io/badge/ClickHouse-?style=flat-square&logo=clickhouse&logoColor=00FF41&color=003B10)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-?style=flat-square&logo=postgresql&logoColor=00FF41&color=003B10)
+![React](https://img.shields.io/badge/React-?style=flat-square&logo=react&logoColor=00FF41&color=003B10)
+![Docker](https://img.shields.io/badge/Docker-?style=flat-square&logo=docker&logoColor=00FF41&color=003B10)
 
 [![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/SAISENGMAIN6631503085/log-mgmt)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-161B22?style=for-the-badge&logo=caddy&logoColor=00FF41)](https://14.207.143.101.sslip.io)
@@ -106,9 +106,9 @@ Multi-tenant log management / SIEM-lite that ingests firewall, syslog, app, AWS 
 
 University advising & student support platform streamlining advisory workflows, early academic intervention, and student exit management — role-based access, bilingual support, automated AUN-QA compliance reporting, and interactive data visualization.
 
-![](https://img.shields.io/badge/RBAC-161B22?style=flat-square&color=003B10)
-![](https://img.shields.io/badge/Bilingual-161B22?style=flat-square&color=003B10)
-![](https://img.shields.io/badge/AUN--QA-161B22?style=flat-square&color=003B10)
+![RBAC](https://img.shields.io/badge/RBAC-?style=flat-square&color=003B10)
+![Bilingual](https://img.shields.io/badge/Bilingual-?style=flat-square&color=003B10)
+![AUN-QA](https://img.shields.io/badge/AUN--QA-?style=flat-square&color=003B10)
 
 [![Repo](https://img.shields.io/badge/Repo-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/advisinglog/advising-log)
 [![Preview Demo](https://img.shields.io/badge/Preview_Demo-161B22?style=for-the-badge&logo=vercel&logoColor=00FF41)](https://se-advising-log.vercel.app)
@@ -124,9 +124,9 @@ University advising & student support platform streamlining advisory workflows, 
 
 High-performance restaurant POS with ESC/POS thermal printing, live order lifecycle tracking, and an edge-native backend.
 
-![](https://img.shields.io/badge/TanStack_Start-161B22?style=flat-square&color=003B10)
-![](https://img.shields.io/badge/Cloudflare_D1-161B22?style=flat-square&logo=cloudflare&logoColor=00FF41&color=003B10)
-![](https://img.shields.io/badge/ESC%2FPOS-161B22?style=flat-square&color=003B10)
+![TanStack Start](https://img.shields.io/badge/TanStack_Start-?style=flat-square&color=003B10)
+![Cloudflare D1](https://img.shields.io/badge/Cloudflare_D1-?style=flat-square&logo=cloudflare&logoColor=00FF41&color=003B10)
+![ESC/POS](https://img.shields.io/badge/ESC%2FPOS-?style=flat-square&color=003B10)
 
 ![In Production](https://img.shields.io/badge/In_Production-161B22?style=for-the-badge&logo=statuspage&logoColor=00FF41)
 ![Private Repo](https://img.shields.io/badge/Private_Repo-161B22?style=for-the-badge&logo=github&logoColor=8B949E)
