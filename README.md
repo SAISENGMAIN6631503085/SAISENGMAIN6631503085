@@ -4,6 +4,9 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&pause=1000&color=007ACC&center=true&vCenter=true&width=650&height=45&lines=Software+Engineering+Student+%F0%9F%8E%93;Full-Stack+Web+Developer+%F0%9F%92%BB;AI+Workflow+%26+Security+Enthusiast+%F0%9F%9B%A1%EF%B8%8F)](https://git.io/typing-svg)
 
+<!-- Matrix-style face scan animation (pure SVG + CSS, no JS) -->
+<img src="./assets/face-scan.svg" alt="Matrix-style face scan: digital rain, a wireframe face mesh drawing in, landmark detection and a match result" width="100%" />
+
 > **4th-Year student passionate about building full-stack web applications, exploring cybersecurity, and leveraging cutting-edge AI developer workflows.**
 
 <br />

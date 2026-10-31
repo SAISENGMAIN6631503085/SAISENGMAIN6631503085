@@ -1,0 +1,850 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-label="Matrix-style face scan animation">
+<style>
+  .rain{font:14px monospace;fill:#00ff41}
+  .col{animation:fall linear infinite}
+  @keyframes fall{from{transform:translateY(-360px)}to{transform:translateY(360px)}}
+  .ln{fill:none;stroke:#00ff41;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;
+      stroke-dasharray:1;stroke-dashoffset:1;filter:url(#glow);animation:draw 12s ease-in-out infinite}
+  .mesh{stroke-width:.7;stroke-opacity:.55;animation-name:drawMesh}
+  @keyframes draw{0%,8%{stroke-dashoffset:1;opacity:0}12%{opacity:1}40%{stroke-dashoffset:0}85%{stroke-dashoffset:0;opacity:1}95%,100%{stroke-dashoffset:0;opacity:0}}
+  @keyframes drawMesh{0%,30%{stroke-dashoffset:1;opacity:0}33%{opacity:1}55%{stroke-dashoffset:0}85%{stroke-dashoffset:0;opacity:1}95%,100%{stroke-dashoffset:0;opacity:0}}
+  .pt{fill:#b6ffc8;opacity:0;animation:pop 12s infinite}
+  @keyframes pop{0%,42%{opacity:0;r:0}45%{opacity:1;r:3.5}48%{r:2}85%{opacity:1}95%,100%{opacity:0}}
+  .scan{animation:scan 12s ease-in-out infinite;opacity:0}
+  @keyframes scan{0%,10%{transform:translateY(-110px);opacity:0}12%{opacity:1}30%{transform:translateY(110px)}48%{transform:translateY(-110px)}62%{transform:translateY(110px);opacity:1}65%,100%{transform:translateY(110px);opacity:0}}
+  .brk{fill:none;stroke:#00ff41;stroke-width:2.5;opacity:0;animation:brk 12s infinite}
+  @keyframes brk{0%{opacity:0}4%,6%{opacity:1}5%{opacity:.2}62%{opacity:1;stroke:#00ff41}66%,85%{opacity:1;stroke:#7dffa0}95%,100%{opacity:0}}
+  .txt{font:bold 13px monospace;fill:#00ff41;opacity:0;animation:txt 12s steps(1) infinite}
+  @keyframes txt{0%{opacity:0}100%{opacity:0}}
+  .t1{animation-name:t1}.t2{animation-name:t2}.t3{animation-name:t3}.t4{animation-name:t4}.t5{animation-name:t5}.t6{animation-name:t6}
+  @keyframes t1{0%,5%{opacity:0}6%,92%{opacity:1}93%,100%{opacity:0}}
+  @keyframes t2{0%,18%{opacity:0}19%,92%{opacity:1}93%,100%{opacity:0}}
+  @keyframes t3{0%,35%{opacity:0}36%,92%{opacity:1}93%,100%{opacity:0}}
+  @keyframes t4{0%,46%{opacity:0}47%,92%{opacity:1}93%,100%{opacity:0}}
+  @keyframes t5{0%,56%{opacity:0}57%,92%{opacity:1}93%,100%{opacity:0}}
+  @keyframes t6{0%,65%{opacity:0}66%,68%{opacity:1}69%,70%{opacity:0}71%,92%{opacity:1}93%,100%{opacity:0}}
+  .match{font:bold 15px monospace;fill:#000;}
+  .badge{fill:#00ff41}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){.col,.scan{animation:none}}
+</style>
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <radialGradient id="vig" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".92"/><stop offset=".6" stop-color="#000" stop-opacity=".75"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00ff41" stop-opacity="0"/><stop offset=".5" stop-color="#00ff41" stop-opacity=".35"/><stop offset="1" stop-color="#00ff41" stop-opacity="0"/></linearGradient>
+  <clipPath id="frame"><rect width="800" height="320" rx="10"/></clipPath>
+</defs>
+<g clip-path="url(#frame)">
+<rect width="800" height="320" fill="#0a0a0a"/>
+<g class="rain">
+<g class="col" style="animation-duration:9.7s;animation-delay:-3.8s"><text x="10" y="0">
+<tspan x="10" dy="16" fill-opacity="0.08">ｴ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.11">ｵ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.14">7</tspan>
+<tspan x="10" dy="16" fill-opacity="0.17">ﾓ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.20">ｷ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.22">ﾈ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.25">ﾖ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.28">ｴ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.31">=</tspan>
+<tspan x="10" dy="16" fill-opacity="0.34">ﾑ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.37">ｾ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.40">ｳ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.43">ｶ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.46">ﾌ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.49">ﾋ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.51">ｵ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.54">ﾀ</tspan>
+<tspan x="10" dy="16" fill-opacity="0.57">ｶ</tspan>
+<tspan x="10" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾔ</tspan>
+</text></g>
+<g class="col" style="animation-duration:4.8s;animation-delay:-2.7s"><text x="32" y="0">
+<tspan x="32" dy="16" fill-opacity="0.08">+</tspan>
+<tspan x="32" dy="16" fill-opacity="0.11">ｿ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.14">ﾙ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.16">ﾙ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.19">ﾖ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.22">+</tspan>
+<tspan x="32" dy="16" fill-opacity="0.24">ｴ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.27">ﾕ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.30">ﾖ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.33">ﾊ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.36">ｴ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.38">ｿ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.41">ｳ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.44">ﾔ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.47">9</tspan>
+<tspan x="32" dy="16" fill-opacity="0.49">ｹ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.52">ﾃ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.55">ﾋ</tspan>
+<tspan x="32" dy="16" fill-opacity="0.58">ｺ</tspan>
+<tspan x="32" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾓ</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.6s;animation-delay:-4.3s"><text x="54" y="0">
+<tspan x="54" dy="16" fill-opacity="0.08">ﾜ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.12">ｼ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.15">ｷ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.19">ﾖ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.23">ﾕ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.26">ﾙ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.30">ｽ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.34">ﾈ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.37">ｷ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.41">ﾔ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.45">0</tspan>
+<tspan x="54" dy="16" fill-opacity="0.48">ｵ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.52">ﾕ</tspan>
+<tspan x="54" dy="16" fill-opacity="0.56">ｴ</tspan>
+<tspan x="54" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾘ</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.2s;animation-delay:-3.8s"><text x="76" y="0">
+<tspan x="76" dy="16" fill-opacity="0.08">4</tspan>
+<tspan x="76" dy="16" fill-opacity="0.11">ﾅ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.14">ﾎ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.18">ﾖ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.21">*</tspan>
+<tspan x="76" dy="16" fill-opacity="0.24">ﾎ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.27">ﾈ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.31">ﾄ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.34">ﾀ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.37">5</tspan>
+<tspan x="76" dy="16" fill-opacity="0.40">ｼ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.44">ﾝ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.47">4</tspan>
+<tspan x="76" dy="16" fill-opacity="0.50">ﾀ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.53">ｶ</tspan>
+<tspan x="76" dy="16" fill-opacity="0.57">ﾕ</tspan>
+<tspan x="76" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾄ</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.2s;animation-delay:-2.5s"><text x="98" y="0">
+<tspan x="98" dy="16" fill-opacity="0.08">ﾍ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.11">ﾃ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.13">ﾗ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.15">ｵ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.18">ｸ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.21">ﾑ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.23">ﾋ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.26">ｻ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.28">3</tspan>
+<tspan x="98" dy="16" fill-opacity="0.31">ﾆ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.33">ｺ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.36">*</tspan>
+<tspan x="98" dy="16" fill-opacity="0.38">ﾐ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.41">ﾋ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.43">ｳ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.46">ﾛ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.48">ｵ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.51">3</tspan>
+<tspan x="98" dy="16" fill-opacity="0.53">ﾔ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.56">ﾕ</tspan>
+<tspan x="98" dy="16" fill-opacity="0.58">5</tspan>
+<tspan x="98" dy="16" fill-opacity="1.00" fill="#d4ffe0">:</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.4s;animation-delay:-2.2s"><text x="120" y="0">
+<tspan x="120" dy="16" fill-opacity="0.08">ﾐ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.11">ﾖ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.14">6</tspan>
+<tspan x="120" dy="16" fill-opacity="0.17">ﾎ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.20">ｵ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.22">8</tspan>
+<tspan x="120" dy="16" fill-opacity="0.25">ｶ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.28">+</tspan>
+<tspan x="120" dy="16" fill-opacity="0.31">ﾂ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.34">ﾏ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.37">ﾝ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.40">ﾛ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.43">ｵ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.46">ｴ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.49">1</tspan>
+<tspan x="120" dy="16" fill-opacity="0.51">ﾝ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.54">ﾄ</tspan>
+<tspan x="120" dy="16" fill-opacity="0.57">ﾚ</tspan>
+<tspan x="120" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾕ</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.1s;animation-delay:-2.3s"><text x="142" y="0">
+<tspan x="142" dy="16" fill-opacity="0.08">ﾛ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.11">ﾇ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.13">ｲ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.16">+</tspan>
+<tspan x="142" dy="16" fill-opacity="0.18">ﾎ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.21">ﾇ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.24">ｻ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.26">ﾘ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.29">ｸ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.32">ﾐ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.34">ｴ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.37">ｾ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.39">4</tspan>
+<tspan x="142" dy="16" fill-opacity="0.42">ﾃ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.45">ｹ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.47">2</tspan>
+<tspan x="142" dy="16" fill-opacity="0.50">ﾀ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.53">ﾊ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.55">ﾊ</tspan>
+<tspan x="142" dy="16" fill-opacity="0.58">=</tspan>
+<tspan x="142" dy="16" fill-opacity="1.00" fill="#d4ffe0">Z</tspan>
+</text></g>
+<g class="col" style="animation-duration:4.9s;animation-delay:-2.2s"><text x="164" y="0">
+<tspan x="164" dy="16" fill-opacity="0.08">ﾔ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.11">ﾂ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.13">:</tspan>
+<tspan x="164" dy="16" fill-opacity="0.16">ｹ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.18">7</tspan>
+<tspan x="164" dy="16" fill-opacity="0.21">ﾌ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.24">Z</tspan>
+<tspan x="164" dy="16" fill-opacity="0.26">ﾔ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.29">ﾂ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.32">0</tspan>
+<tspan x="164" dy="16" fill-opacity="0.34">ﾋ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.37">ﾇ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.39">ﾜ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.42">:</tspan>
+<tspan x="164" dy="16" fill-opacity="0.45">ﾉ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.47">ｿ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.50">ｺ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.53">ｶ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.55">ｼ</tspan>
+<tspan x="164" dy="16" fill-opacity="0.58">ｺ</tspan>
+<tspan x="164" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｿ</tspan>
+</text></g>
+<g class="col" style="animation-duration:4.6s;animation-delay:-3.8s"><text x="186" y="0">
+<tspan x="186" dy="16" fill-opacity="0.08">ｼ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.11">ﾁ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.14">ﾃ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.18">ｱ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.21">ｺ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.24">ﾋ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.27">ﾓ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.31">ﾈ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.34">ﾘ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.37">ﾕ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.40">ﾅ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.44">+</tspan>
+<tspan x="186" dy="16" fill-opacity="0.47">ｹ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.50">ﾝ</tspan>
+<tspan x="186" dy="16" fill-opacity="0.53">9</tspan>
+<tspan x="186" dy="16" fill-opacity="0.57">ﾑ</tspan>
+<tspan x="186" dy="16" fill-opacity="1.00" fill="#d4ffe0">+</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.0s;animation-delay:-6.1s"><text x="208" y="0">
+<tspan x="208" dy="16" fill-opacity="0.08">+</tspan>
+<tspan x="208" dy="16" fill-opacity="0.12">Z</tspan>
+<tspan x="208" dy="16" fill-opacity="0.16">ﾜ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.20">6</tspan>
+<tspan x="208" dy="16" fill-opacity="0.24">ﾔ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.28">ﾊ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.32">ﾊ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.36">ﾊ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.39">ﾊ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.43">ｷ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.47">ﾏ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.51">ﾙ</tspan>
+<tspan x="208" dy="16" fill-opacity="0.55">ﾊ</tspan>
+<tspan x="208" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｴ</tspan>
+</text></g>
+<g class="col" style="animation-duration:4.9s;animation-delay:-1.0s"><text x="230" y="0">
+<tspan x="230" dy="16" fill-opacity="0.08">ｻ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.11">ｸ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.14">ﾆ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.18">ﾗ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.21">ｴ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.24">ｷ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.27">ｱ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.31">ﾕ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.34">ｺ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.37">ﾓ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.40">ｷ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.44">+</tspan>
+<tspan x="230" dy="16" fill-opacity="0.47">ﾈ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.50">ﾘ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.53">ｲ</tspan>
+<tspan x="230" dy="16" fill-opacity="0.57">ｵ</tspan>
+<tspan x="230" dy="16" fill-opacity="1.00" fill="#d4ffe0">Z</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.9s;animation-delay:-1.2s"><text x="252" y="0">
+<tspan x="252" dy="16" fill-opacity="0.08">ﾁ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.11">ﾇ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.14">ﾗ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.18">ﾈ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.21">ﾏ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.24">ｸ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.27">ｸ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.31">9</tspan>
+<tspan x="252" dy="16" fill-opacity="0.34">ﾐ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.37">ﾎ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.40">ﾏ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.44">ﾏ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.47">ﾄ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.50">ｶ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.53">ｺ</tspan>
+<tspan x="252" dy="16" fill-opacity="0.57">ｷ</tspan>
+<tspan x="252" dy="16" fill-opacity="1.00" fill="#d4ffe0">2</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.6s;animation-delay:-4.1s"><text x="274" y="0">
+<tspan x="274" dy="16" fill-opacity="0.08">ﾝ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.11">ｻ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.14">ﾒ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.17">ｲ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.20">ｾ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.22">+</tspan>
+<tspan x="274" dy="16" fill-opacity="0.25">+</tspan>
+<tspan x="274" dy="16" fill-opacity="0.28">ﾒ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.31">ﾈ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.34">ｺ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.37">ﾝ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.40">ﾓ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.43">=</tspan>
+<tspan x="274" dy="16" fill-opacity="0.46">ｲ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.49">3</tspan>
+<tspan x="274" dy="16" fill-opacity="0.51">ﾒ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.54">ﾄ</tspan>
+<tspan x="274" dy="16" fill-opacity="0.57">ﾚ</tspan>
+<tspan x="274" dy="16" fill-opacity="1.00" fill="#d4ffe0">Z</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.3s;animation-delay:-2.2s"><text x="296" y="0">
+<tspan x="296" dy="16" fill-opacity="0.08">ﾈ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.12">=</tspan>
+<tspan x="296" dy="16" fill-opacity="0.15">ｻ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.19">ﾇ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.23">4</tspan>
+<tspan x="296" dy="16" fill-opacity="0.26">ｿ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.30">ﾓ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.34">ﾓ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.37">4</tspan>
+<tspan x="296" dy="16" fill-opacity="0.41">ﾑ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.45">ﾆ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.48">ﾙ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.52">ｿ</tspan>
+<tspan x="296" dy="16" fill-opacity="0.56">ﾘ</tspan>
+<tspan x="296" dy="16" fill-opacity="1.00" fill="#d4ffe0">6</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.9s;animation-delay:-7.3s"><text x="318" y="0">
+<tspan x="318" dy="16" fill-opacity="0.08">2</tspan>
+<tspan x="318" dy="16" fill-opacity="0.11">6</tspan>
+<tspan x="318" dy="16" fill-opacity="0.14">ｿ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.18">ｽ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.21">ﾒ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.24">ﾐ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.27">ﾇ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.31">1</tspan>
+<tspan x="318" dy="16" fill-opacity="0.34">ｲ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.37">ｲ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.40">5</tspan>
+<tspan x="318" dy="16" fill-opacity="0.44">ﾂ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.47">ﾏ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.50">ﾁ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.53">ｽ</tspan>
+<tspan x="318" dy="16" fill-opacity="0.57">ﾝ</tspan>
+<tspan x="318" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾗ</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.0s;animation-delay:-6.5s"><text x="340" y="0">
+<tspan x="340" dy="16" fill-opacity="0.08">ﾇ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.11">ﾈ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.14">ｶ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.17">ｿ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.20">ｷ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.22">ｿ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.25">ﾏ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.28">ｽ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.31">ﾆ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.34">ｾ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.37">ﾏ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.40">ﾘ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.43">.</tspan>
+<tspan x="340" dy="16" fill-opacity="0.46">ﾘ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.49">8</tspan>
+<tspan x="340" dy="16" fill-opacity="0.51">ｱ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.54">ﾏ</tspan>
+<tspan x="340" dy="16" fill-opacity="0.57">=</tspan>
+<tspan x="340" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾚ</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.9s;animation-delay:-0.8s"><text x="362" y="0">
+<tspan x="362" dy="16" fill-opacity="0.08">ﾛ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.11">ｸ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.14">=</tspan>
+<tspan x="362" dy="16" fill-opacity="0.17">ﾉ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.20">5</tspan>
+<tspan x="362" dy="16" fill-opacity="0.22">0</tspan>
+<tspan x="362" dy="16" fill-opacity="0.25">3</tspan>
+<tspan x="362" dy="16" fill-opacity="0.28">ｽ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.31">ﾏ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.34">:</tspan>
+<tspan x="362" dy="16" fill-opacity="0.37">ｼ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.40">ﾌ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.43">5</tspan>
+<tspan x="362" dy="16" fill-opacity="0.46">ﾙ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.49">ﾆ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.51">ｶ</tspan>
+<tspan x="362" dy="16" fill-opacity="0.54">6</tspan>
+<tspan x="362" dy="16" fill-opacity="0.57">+</tspan>
+<tspan x="362" dy="16" fill-opacity="1.00" fill="#d4ffe0">1</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.0s;animation-delay:-5.2s"><text x="384" y="0">
+<tspan x="384" dy="16" fill-opacity="0.08">ｶ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.11">1</tspan>
+<tspan x="384" dy="16" fill-opacity="0.14">ｻ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.16">ｻ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.19">ｹ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.22">ｲ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.24">ｺ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.27">ﾖ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.30">.</tspan>
+<tspan x="384" dy="16" fill-opacity="0.33">ﾎ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.36">6</tspan>
+<tspan x="384" dy="16" fill-opacity="0.38">ﾚ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.41">ｺ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.44">ﾘ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.47">7</tspan>
+<tspan x="384" dy="16" fill-opacity="0.49">ﾗ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.52">ﾏ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.55">ﾛ</tspan>
+<tspan x="384" dy="16" fill-opacity="0.58">*</tspan>
+<tspan x="384" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾇ</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.5s;animation-delay:-1.0s"><text x="406" y="0">
+<tspan x="406" dy="16" fill-opacity="0.08">ｱ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.11">6</tspan>
+<tspan x="406" dy="16" fill-opacity="0.15">1</tspan>
+<tspan x="406" dy="16" fill-opacity="0.18">ﾚ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.22">ｷ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.25">ﾒ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.29">2</tspan>
+<tspan x="406" dy="16" fill-opacity="0.32">*</tspan>
+<tspan x="406" dy="16" fill-opacity="0.36">ｹ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.39">ﾌ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.42">Z</tspan>
+<tspan x="406" dy="16" fill-opacity="0.46">ｽ</tspan>
+<tspan x="406" dy="16" fill-opacity="0.49">7</tspan>
+<tspan x="406" dy="16" fill-opacity="0.53">Z</tspan>
+<tspan x="406" dy="16" fill-opacity="0.56">ｾ</tspan>
+<tspan x="406" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｲ</tspan>
+</text></g>
+<g class="col" style="animation-duration:5.7s;animation-delay:-2.8s"><text x="428" y="0">
+<tspan x="428" dy="16" fill-opacity="0.08">3</tspan>
+<tspan x="428" dy="16" fill-opacity="0.11">ﾖ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.14">ﾅ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.17">ﾁ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.20">ﾓ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.23">ﾋ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.26">8</tspan>
+<tspan x="428" dy="16" fill-opacity="0.29">ｹ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.32">ｴ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.36">=</tspan>
+<tspan x="428" dy="16" fill-opacity="0.39">2</tspan>
+<tspan x="428" dy="16" fill-opacity="0.42">ﾇ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.45">.</tspan>
+<tspan x="428" dy="16" fill-opacity="0.48">ﾎ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.51">ﾛ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.54">ﾖ</tspan>
+<tspan x="428" dy="16" fill-opacity="0.57">7</tspan>
+<tspan x="428" dy="16" fill-opacity="1.00" fill="#d4ffe0">.</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.8s;animation-delay:-6.3s"><text x="450" y="0">
+<tspan x="450" dy="16" fill-opacity="0.08">ﾑ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.11">ｹ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.13">ﾓ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.15">ｺ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.18">ﾒ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.21">ﾑ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.23">ｲ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.26">Z</tspan>
+<tspan x="450" dy="16" fill-opacity="0.28">ﾍ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.31">4</tspan>
+<tspan x="450" dy="16" fill-opacity="0.33">ｼ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.36">ﾗ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.38">ｱ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.41">4</tspan>
+<tspan x="450" dy="16" fill-opacity="0.43">6</tspan>
+<tspan x="450" dy="16" fill-opacity="0.46">ｺ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.48">ｼ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.51">ｺ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.53">ﾏ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.56">ﾘ</tspan>
+<tspan x="450" dy="16" fill-opacity="0.58">1</tspan>
+<tspan x="450" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｸ</tspan>
+</text></g>
+<g class="col" style="animation-duration:4.8s;animation-delay:-3.3s"><text x="472" y="0">
+<tspan x="472" dy="16" fill-opacity="0.08">ﾒ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.11">ﾔ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.13">ﾏ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.15">5</tspan>
+<tspan x="472" dy="16" fill-opacity="0.18">4</tspan>
+<tspan x="472" dy="16" fill-opacity="0.21">ｷ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.23">:</tspan>
+<tspan x="472" dy="16" fill-opacity="0.26">ﾔ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.28">ｴ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.31">ﾀ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.33">ｽ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.36">ﾂ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.38">ｳ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.41">4</tspan>
+<tspan x="472" dy="16" fill-opacity="0.43">ｷ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.46">ﾑ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.48">ﾍ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.51">ﾔ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.53">ｲ</tspan>
+<tspan x="472" dy="16" fill-opacity="0.56">3</tspan>
+<tspan x="472" dy="16" fill-opacity="0.58">.</tspan>
+<tspan x="472" dy="16" fill-opacity="1.00" fill="#d4ffe0">=</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.9s;animation-delay:-4.2s"><text x="494" y="0">
+<tspan x="494" dy="16" fill-opacity="0.08">ﾑ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.12">ﾗ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.15">ﾑ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.19">ｽ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.23">ﾝ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.26">ﾂ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.30">ﾍ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.34">ﾑ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.37">ﾓ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.41">6</tspan>
+<tspan x="494" dy="16" fill-opacity="0.45">ﾏ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.48">ﾑ</tspan>
+<tspan x="494" dy="16" fill-opacity="0.52">+</tspan>
+<tspan x="494" dy="16" fill-opacity="0.56">ﾀ</tspan>
+<tspan x="494" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾝ</tspan>
+</text></g>
+<g class="col" style="animation-duration:9.3s;animation-delay:-8.8s"><text x="516" y="0">
+<tspan x="516" dy="16" fill-opacity="0.08">ﾁ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.11">*</tspan>
+<tspan x="516" dy="16" fill-opacity="0.13">ﾔ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.15">.</tspan>
+<tspan x="516" dy="16" fill-opacity="0.18">+</tspan>
+<tspan x="516" dy="16" fill-opacity="0.21">ｽ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.23">8</tspan>
+<tspan x="516" dy="16" fill-opacity="0.26">ﾍ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.28">ｹ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.31">ﾋ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.33">ｸ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.36">ﾊ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.38">ﾍ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.41">ﾅ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.43">ｵ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.46">ﾛ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.48">ﾀ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.51">ﾌ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.53">ｵ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.56">ｾ</tspan>
+<tspan x="516" dy="16" fill-opacity="0.58">ﾛ</tspan>
+<tspan x="516" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾄ</tspan>
+</text></g>
+<g class="col" style="animation-duration:9.4s;animation-delay:-1.5s"><text x="538" y="0">
+<tspan x="538" dy="16" fill-opacity="0.08">0</tspan>
+<tspan x="538" dy="16" fill-opacity="0.12">ﾚ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.15">ﾛ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.19">ﾈ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.23">ｺ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.26">ﾁ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.30">:</tspan>
+<tspan x="538" dy="16" fill-opacity="0.34">ｹ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.37">ﾎ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.41">ｿ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.45">2</tspan>
+<tspan x="538" dy="16" fill-opacity="0.48">+</tspan>
+<tspan x="538" dy="16" fill-opacity="0.52">ｷ</tspan>
+<tspan x="538" dy="16" fill-opacity="0.56">ﾊ</tspan>
+<tspan x="538" dy="16" fill-opacity="1.00" fill="#d4ffe0">:</tspan>
+</text></g>
+<g class="col" style="animation-duration:5.4s;animation-delay:-3.6s"><text x="560" y="0">
+<tspan x="560" dy="16" fill-opacity="0.08">ｿ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.11">ｻ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.13">0</tspan>
+<tspan x="560" dy="16" fill-opacity="0.16">ﾌ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.18">ﾑ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.21">ﾊ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.24">ﾆ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.26">ﾋ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.29">ｽ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.32">ﾇ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.34">ﾅ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.37">ｶ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.39">1</tspan>
+<tspan x="560" dy="16" fill-opacity="0.42">ﾈ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.45">ｲ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.47">ﾆ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.50">ﾔ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.53">ﾎ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.55">ﾍ</tspan>
+<tspan x="560" dy="16" fill-opacity="0.58">0</tspan>
+<tspan x="560" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｲ</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.3s;animation-delay:-3.9s"><text x="582" y="0">
+<tspan x="582" dy="16" fill-opacity="0.08">ﾑ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.11">ｵ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.14">ｸ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.16">=</tspan>
+<tspan x="582" dy="16" fill-opacity="0.19">5</tspan>
+<tspan x="582" dy="16" fill-opacity="0.22">ｿ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.24">:</tspan>
+<tspan x="582" dy="16" fill-opacity="0.27">ｷ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.30">ｶ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.33">ﾁ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.36">ﾂ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.38">ｳ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.41">.</tspan>
+<tspan x="582" dy="16" fill-opacity="0.44">4</tspan>
+<tspan x="582" dy="16" fill-opacity="0.47">ｼ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.49">ﾂ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.52">3</tspan>
+<tspan x="582" dy="16" fill-opacity="0.55">ｹ</tspan>
+<tspan x="582" dy="16" fill-opacity="0.58">7</tspan>
+<tspan x="582" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾌ</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.7s;animation-delay:-3.6s"><text x="604" y="0">
+<tspan x="604" dy="16" fill-opacity="0.08">ﾑ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.11">ﾕ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.14">ﾐ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.17">ﾝ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.20">ﾅ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.23">ｶ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.26">ﾂ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.29">ｴ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.32">6</tspan>
+<tspan x="604" dy="16" fill-opacity="0.36">ﾝ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.39">ｼ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.42">ﾌ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.45">.</tspan>
+<tspan x="604" dy="16" fill-opacity="0.48">ｵ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.51">ﾂ</tspan>
+<tspan x="604" dy="16" fill-opacity="0.54">+</tspan>
+<tspan x="604" dy="16" fill-opacity="0.57">ｲ</tspan>
+<tspan x="604" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾙ</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.9s;animation-delay:-0.7s"><text x="626" y="0">
+<tspan x="626" dy="16" fill-opacity="0.08">9</tspan>
+<tspan x="626" dy="16" fill-opacity="0.12">ｿ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.15">ｵ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.19">ﾁ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.23">Z</tspan>
+<tspan x="626" dy="16" fill-opacity="0.26">ｸ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.30">ﾎ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.34">ｱ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.37">ﾆ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.41">ﾔ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.45">ﾋ</tspan>
+<tspan x="626" dy="16" fill-opacity="0.48">*</tspan>
+<tspan x="626" dy="16" fill-opacity="0.52">=</tspan>
+<tspan x="626" dy="16" fill-opacity="0.56">ﾂ</tspan>
+<tspan x="626" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾘ</tspan>
+</text></g>
+<g class="col" style="animation-duration:4.7s;animation-delay:-3.4s"><text x="648" y="0">
+<tspan x="648" dy="16" fill-opacity="0.08">+</tspan>
+<tspan x="648" dy="16" fill-opacity="0.11">ｸ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.15">ｻ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.18">ﾁ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.22">ｴ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.25">ｼ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.29">ｽ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.32">*</tspan>
+<tspan x="648" dy="16" fill-opacity="0.36">ﾄ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.39">ﾙ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.42">ﾄ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.46">ﾒ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.49">3</tspan>
+<tspan x="648" dy="16" fill-opacity="0.53">ｾ</tspan>
+<tspan x="648" dy="16" fill-opacity="0.56">ﾃ</tspan>
+<tspan x="648" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾍ</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.2s;animation-delay:-2.2s"><text x="670" y="0">
+<tspan x="670" dy="16" fill-opacity="0.08">6</tspan>
+<tspan x="670" dy="16" fill-opacity="0.11">ｲ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.13">ﾁ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.15">ｳ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.18">ｱ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.21">ｲ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.23">1</tspan>
+<tspan x="670" dy="16" fill-opacity="0.26">ﾑ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.28">ﾔ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.31">ｽ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.33">ﾑ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.36">ﾏ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.38">ﾀ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.41">*</tspan>
+<tspan x="670" dy="16" fill-opacity="0.43">ﾍ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.46">ｷ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.48">ﾛ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.51">7</tspan>
+<tspan x="670" dy="16" fill-opacity="0.53">ﾚ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.56">ﾌ</tspan>
+<tspan x="670" dy="16" fill-opacity="0.58">ﾛ</tspan>
+<tspan x="670" dy="16" fill-opacity="1.00" fill="#d4ffe0">ﾐ</tspan>
+</text></g>
+<g class="col" style="animation-duration:9.1s;animation-delay:-3.6s"><text x="692" y="0">
+<tspan x="692" dy="16" fill-opacity="0.08">ﾑ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.11">ﾄ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.13">ﾝ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.15">ｾ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.18">ｿ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.21">ﾆ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.23">ｽ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.26">8</tspan>
+<tspan x="692" dy="16" fill-opacity="0.28">:</tspan>
+<tspan x="692" dy="16" fill-opacity="0.31">0</tspan>
+<tspan x="692" dy="16" fill-opacity="0.33">1</tspan>
+<tspan x="692" dy="16" fill-opacity="0.36">ﾙ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.38">ｹ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.41">ﾊ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.43">ﾇ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.46">ｴ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.48">8</tspan>
+<tspan x="692" dy="16" fill-opacity="0.51">ｹ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.53">ｱ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.56">ｵ</tspan>
+<tspan x="692" dy="16" fill-opacity="0.58">ﾙ</tspan>
+<tspan x="692" dy="16" fill-opacity="1.00" fill="#d4ffe0">2</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.9s;animation-delay:-0.4s"><text x="714" y="0">
+<tspan x="714" dy="16" fill-opacity="0.08">ﾛ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.11">8</tspan>
+<tspan x="714" dy="16" fill-opacity="0.14">ﾉ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.17">Z</tspan>
+<tspan x="714" dy="16" fill-opacity="0.20">ﾑ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.23">ﾛ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.26">ﾃ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.29">ﾗ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.32">ﾀ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.36">ﾝ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.39">ﾃ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.42">ｳ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.45">ﾎ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.48">ｼ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.51">ｻ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.54">ﾂ</tspan>
+<tspan x="714" dy="16" fill-opacity="0.57">ﾍ</tspan>
+<tspan x="714" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｱ</tspan>
+</text></g>
+<g class="col" style="animation-duration:6.5s;animation-delay:-2.1s"><text x="736" y="0">
+<tspan x="736" dy="16" fill-opacity="0.08">ﾔ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.11">ﾅ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.14">ﾀ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.17">ｳ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.20">:</tspan>
+<tspan x="736" dy="16" fill-opacity="0.23">ﾄ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.26">ｾ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.29">ﾇ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.32">ｼ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.36">ｱ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.39">ﾆ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.42">ﾉ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.45">ｶ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.48">ﾏ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.51">ﾂ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.54">ﾑ</tspan>
+<tspan x="736" dy="16" fill-opacity="0.57">ﾚ</tspan>
+<tspan x="736" dy="16" fill-opacity="1.00" fill="#d4ffe0">ｽ</tspan>
+</text></g>
+<g class="col" style="animation-duration:7.3s;animation-delay:-0.0s"><text x="758" y="0">
+<tspan x="758" dy="16" fill-opacity="0.08">ﾁ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.11">7</tspan>
+<tspan x="758" dy="16" fill-opacity="0.14">ｶ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.18">ｺ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.21">ﾊ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.24">ﾖ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.27">ｳ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.31">ﾊ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.34">ｲ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.37">ﾄ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.40">ﾄ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.44">ﾙ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.47">ｿ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.50">ｶ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.53">ﾖ</tspan>
+<tspan x="758" dy="16" fill-opacity="0.57">ﾒ</tspan>
+<tspan x="758" dy="16" fill-opacity="1.00" fill="#d4ffe0">9</tspan>
+</text></g>
+<g class="col" style="animation-duration:8.1s;animation-delay:-5.8s"><text x="780" y="0">
+<tspan x="780" dy="16" fill-opacity="0.08">:</tspan>
+<tspan x="780" dy="16" fill-opacity="0.11">ﾗ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.15">ﾉ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.18">3</tspan>
+<tspan x="780" dy="16" fill-opacity="0.22">ﾅ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.25">1</tspan>
+<tspan x="780" dy="16" fill-opacity="0.29">ﾐ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.32">ｺ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.36">ﾃ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.39">1</tspan>
+<tspan x="780" dy="16" fill-opacity="0.42">ﾘ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.46">ﾚ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.49">ｺ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.53">ｳ</tspan>
+<tspan x="780" dy="16" fill-opacity="0.56">7</tspan>
+<tspan x="780" dy="16" fill-opacity="1.00" fill="#d4ffe0">8</tspan>
+</text></g>
+</g>
+<ellipse cx="400" cy="165" rx="210" ry="170" fill="url(#vig)"/>
+<g>
+<path class="ln" pathLength="1" d="M330,135 L338,95 L365,70 L400,62 L435,70 L462,95 L470,135 L468,175 L460,210 L445,237 L425,255 L400,262 L375,255 L355,237 L340,210 L332,175 Z"/>
+<path class="ln" pathLength="1" d="M348,123 L364,113 L386,119"/>
+<path class="ln" pathLength="1" d="M452,123 L436,113 L414,119"/>
+<path class="ln" pathLength="1" d="M354,140 L368,132 L382,140 L368,147 Z"/>
+<path class="ln" pathLength="1" d="M446,140 L432,132 L418,140 L432,147 Z"/>
+<path class="ln" pathLength="1" d="M400,127 L396,160 L387,177 L400,183 L413,177 L404,160"/>
+<path class="ln" pathLength="1" d="M375,210 L390,204 L400,207 L410,204 L425,210 L410,218 L400,220 L390,218 Z"/>
+<path class="ln mesh" pathLength="1" d="M338,95 L364,113"/>
+<path class="ln mesh" pathLength="1" d="M462,95 L436,113"/>
+<path class="ln mesh" pathLength="1" d="M400,62 L400,127"/>
+<path class="ln mesh" pathLength="1" d="M365,70 L386,119"/>
+<path class="ln mesh" pathLength="1" d="M435,70 L414,119"/>
+<path class="ln mesh" pathLength="1" d="M330,135 L354,140"/>
+<path class="ln mesh" pathLength="1" d="M470,135 L446,140"/>
+<path class="ln mesh" pathLength="1" d="M382,140 L400,127"/>
+<path class="ln mesh" pathLength="1" d="M418,140 L400,127"/>
+<path class="ln mesh" pathLength="1" d="M368,147 L387,177"/>
+<path class="ln mesh" pathLength="1" d="M432,147 L413,177"/>
+<path class="ln mesh" pathLength="1" d="M332,175 L387,177"/>
+<path class="ln mesh" pathLength="1" d="M468,175 L413,177"/>
+<path class="ln mesh" pathLength="1" d="M387,177 L375,210"/>
+<path class="ln mesh" pathLength="1" d="M413,177 L425,210"/>
+<path class="ln mesh" pathLength="1" d="M400,183 L400,207"/>
+<path class="ln mesh" pathLength="1" d="M340,210 L375,210"/>
+<path class="ln mesh" pathLength="1" d="M460,210 L425,210"/>
+<path class="ln mesh" pathLength="1" d="M375,210 L375,255"/>
+<path class="ln mesh" pathLength="1" d="M425,210 L425,255"/>
+<path class="ln mesh" pathLength="1" d="M400,220 L400,262"/>
+<path class="ln mesh" pathLength="1" d="M355,237 L390,218"/>
+<path class="ln mesh" pathLength="1" d="M445,237 L410,218"/>
+<circle class="pt" cx="330" cy="135" r="2" style="animation-delay:0.00s"/>
+<circle class="pt" cx="365" cy="70" r="2" style="animation-delay:0.04s"/>
+<circle class="pt" cx="435" cy="70" r="2" style="animation-delay:0.08s"/>
+<circle class="pt" cx="470" cy="135" r="2" style="animation-delay:0.12s"/>
+<circle class="pt" cx="460" cy="210" r="2" style="animation-delay:0.16s"/>
+<circle class="pt" cx="425" cy="255" r="2" style="animation-delay:0.20s"/>
+<circle class="pt" cx="375" cy="255" r="2" style="animation-delay:0.24s"/>
+<circle class="pt" cx="340" cy="210" r="2" style="animation-delay:0.28s"/>
+<circle class="pt" cx="348" cy="123" r="2" style="animation-delay:0.32s"/>
+<circle class="pt" cx="364" cy="113" r="2" style="animation-delay:0.36s"/>
+<circle class="pt" cx="386" cy="119" r="2" style="animation-delay:0.40s"/>
+<circle class="pt" cx="452" cy="123" r="2" style="animation-delay:0.44s"/>
+<circle class="pt" cx="436" cy="113" r="2" style="animation-delay:0.48s"/>
+<circle class="pt" cx="414" cy="119" r="2" style="animation-delay:0.52s"/>
+<circle class="pt" cx="354" cy="140" r="2" style="animation-delay:0.56s"/>
+<circle class="pt" cx="368" cy="132" r="2" style="animation-delay:0.60s"/>
+<circle class="pt" cx="382" cy="140" r="2" style="animation-delay:0.64s"/>
+<circle class="pt" cx="368" cy="147" r="2" style="animation-delay:0.68s"/>
+<circle class="pt" cx="446" cy="140" r="2" style="animation-delay:0.72s"/>
+<circle class="pt" cx="432" cy="132" r="2" style="animation-delay:0.76s"/>
+<circle class="pt" cx="418" cy="140" r="2" style="animation-delay:0.80s"/>
+<circle class="pt" cx="432" cy="147" r="2" style="animation-delay:0.84s"/>
+<circle class="pt" cx="400" cy="127" r="2" style="animation-delay:0.88s"/>
+<circle class="pt" cx="396" cy="160" r="2" style="animation-delay:0.92s"/>
+<circle class="pt" cx="387" cy="177" r="2" style="animation-delay:0.96s"/>
+<circle class="pt" cx="400" cy="183" r="2" style="animation-delay:1.00s"/>
+<circle class="pt" cx="413" cy="177" r="2" style="animation-delay:1.04s"/>
+<circle class="pt" cx="404" cy="160" r="2" style="animation-delay:1.08s"/>
+<circle class="pt" cx="375" cy="210" r="2" style="animation-delay:1.12s"/>
+<circle class="pt" cx="400" cy="207" r="2" style="animation-delay:1.16s"/>
+<circle class="pt" cx="425" cy="210" r="2" style="animation-delay:1.20s"/>
+<circle class="pt" cx="400" cy="220" r="2" style="animation-delay:1.24s"/>
+</g>
+<g class="scan" style="transform-origin:400px 165px"><rect x="290" y="151" width="220" height="28" fill="url(#beam)"/><line x1="290" y1="165" x2="510" y2="165" stroke="#b6ffc8" stroke-width="1.5" filter="url(#glow)"/></g>
+<path class="brk" d="M295,62 V40 H317 M483,40 H505 V62 M505,265 V287 H483 M317,287 H295 V265"/>
+<text class="txt t1" x="24" y="40">&gt; SYS.INIT(face_scan)</text>
+<text class="txt t2" x="24" y="64">&gt; DETECTING FACE...</text>
+<text class="txt t3" x="24" y="88">&gt; MAPPING MESH</text>
+<text class="txt t4" x="24" y="112">&gt; LANDMARKS: 68 OK</text>
+<text class="txt t4" x="608" y="40">EMBEDDING: 512-D</text>
+<text class="txt t5" x="608" y="64">VECTOR SEARCH...</text>
+<g class="txt t6"><rect class="badge" x="305" y="286" width="190" height="24" rx="3"/><text class="match" x="400" y="303" text-anchor="middle">MATCH FOUND · 98.7%</text></g>
+<text class="txt t6" x="608" y="303">ACCESS GRANTED<tspan class="blink">_</tspan></text>
+</g></svg>
