@@ -157,9 +157,9 @@ High-performance restaurant POS with ESC/POS thermal printing, live order lifecy
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=1000&color=00FF41&center=true&vCenter=true&width=550&height=30&lines=Let's+build+something+amazing+together!+%F0%9F%9A%80;Open+to+collaborations+%26+new+opportunities!+%F0%9F%92%BC;Feel+free+to+connect+with+me!+%F0%9F%93%AB)](https://git.io/typing-svg)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=00FF41)](#)
-[![Email](https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=00FF41)](mailto:your.email@example.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=google-chrome&logoColor=00FF41)](#)
+[![Follow on GitHub](https://img.shields.io/github/followers/SAISENGMAIN6631503085?style=for-the-badge&logo=github&logoColor=00FF41&label=Follow&labelColor=161B22&color=003B10)](https://github.com/SAISENGMAIN6631503085)
+[![Explore my repos](https://img.shields.io/badge/Explore_Repos-161B22?style=for-the-badge&logo=github&logoColor=00FF41)](https://github.com/SAISENGMAIN6631503085?tab=repositories)
+[![Say hi](https://img.shields.io/badge/Say_Hi_%F0%9F%91%8B-161B22?style=for-the-badge&logo=githubdiscussions&logoColor=00FF41)](https://github.com/SAISENGMAIN6631503085/SAISENGMAIN6631503085/issues/new?title=Hi+Sai!&body=Hey+Sai%2C+I+saw+your+profile+and+wanted+to+say...)
 
 <sub>`[ connection closed ]` — thanks for stopping by ✦</sub>
 
